@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabla de Frutas</title>
+  <script src="script.js"></script>
+</head>
+ <style>
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 600px;
+      background-color: #fff;
+      margin: 40px auto;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    h2, h3 {
+      text-align: center;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    input {
+      width: calc(50% - 12px);
+      padding: 8px;
+      margin: 5px 6px 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .inputs {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Lista de Frutas</h2>
+
+    <table id="tablaFrutas">
+      <thead>
+        <tr>
+          <th>Fruta</th>
+          <th>Color</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Manzana</td>
+          <td>Rojo</td>
+        </tr>
+        <tr>
+          <td>Plátano</td>
+          <td>Amarillo</td>
+        </tr>
+        <tr>
+          <td>Pera</td>
+          <td>Verde</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Añadir nueva fruta</h3>
+    <div class="inputs">
+      <div>
+        <label for="nombreFruta">Nombre:</label>
+        <input type="text" id="nombreFruta" placeholder="Fruta">
+      </div>
+      <div>
+        <label for="colorFruta">Color:</label>
+        <input type="text" id="colorFruta" placeholder="Color">
+      </div>
+    </div>
+    <button id="btnAñadir">Añadir</button>
+  </div>
+</body>
+</html>
